@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bellefair&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>On Click Slide</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow-x: hidden;
+      }
+
+      #button__one {
+        border: none;
+        background-color: #131313;
+        color: white;
+        padding: 15px 35px;
+        font-family: "Bellefair", serif;
+        font-size: 18px;
+        display: block;
+        text-transform: uppercase;
+      }
+
+      #button__one:hover {
+        cursor: pointer;
+      }
+
+      p {
+        font-family: "Roboto", sans-serif;
+        font-size: 17px;
+        margin: 15px 0;
+        line-height: 28px;
+      }
+
+      .parentDiv {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        position: relative;
+      }
+
+      .slide__section {
+        min-height: 100vh;
+        padding: 50px 30px;
+        width: 100%;
+        max-width: 450px;
+        box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.11);
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        /* transform: translate(100%, 0); */
+        z-index: 100;
+      }
+
+      .wrapper__product {
+        position: relative;
+      }
+
+      .close__btn {
+        position: absolute;
+        top: 0%;
+        right: 5%;
+        width: 25px;
+        z-index: 500;
+      }
+
+      .close__btn:hover {
+        cursor: pointer;
+      }
+
+      .product__name {
+        font-size: 40px;
+        font-family: "Bellefair", serif;
+      }
+
+      .price__section {
+        padding: 10px 0;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .price__section p {
+        letter-spacing: 1px;
+      }
+
+      .buy__now__button {
+        text-align: center;
+        font-family: "Bellefair", serif;
+        display: block;
+        text-decoration: none;
+        padding: 15px 35px;
+        color: white;
+        background-color: #131313;
+        width: 100%;
+        margin-bottom: 30px;
+      }
+
+      .buy__now__button:hover {
+        background-color: rgba(19, 19, 19, 0.95);
+      }
+
+      .about__us__button {
+        text-align: center;
+        font-family: "Bellefair", serif;
+        display: block;
+        text-decoration: none;
+        padding: 15px 35px;
+        color: #131313;
+        background-color: #efefef;
+        width: 100%;
+        margin-bottom: 30px;
+        border: 1px solid transparent;
+      }
+
+      .about__us__button:hover {
+        border: 1px solid #131313;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <button id="button__one">Açaí Eis</button>
+      <div class="slide__section">
+        <div class="wrapper__product">
+          <svg
+            class="close__btn"
+            width="100%"
+            min-height="0"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.5 37.25L37.5 2.25M2.5 2.25L37.5 37.25"
+              stroke="#131313"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </svg>
+
+          <h3 class="product__name">Açaí Eis</h3>
+          <p class="product__description">
+            Die besondere Açaí Palmbeere aus Südamerika überzeugt mit ihrem
+            exotischen Geschmack.
+          </p>
+          <div class="price__section">
+            <p href="#"><strong>9,90€</strong></p>
+            <p href="#"><strong>7,90€</strong></p>
+          </div>
+
+          <a
+            class="buy__now__button"
+            href="https://www.gelateria-giulia.de/product/acai-eis/"
+            >JETZT BESTELLEN</a
+          >
+
+          <a
+            class="about__us__button"
+            href="https://www.gelateria-giulia.de/ueber-uns/"
+            >ÜBER UNS</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
