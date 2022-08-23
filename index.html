@@ -20,6 +20,12 @@
         overflow-x: hidden;
       }
 
+      .img-responsive {
+        max-width: 80%;
+        margin: 0 auto;
+        display: block;
+      }
+
       #button__one {
         border: none;
         background-color: #131313;
@@ -82,6 +88,8 @@
       .product__name {
         font-size: 40px;
         font-family: "Bellefair", serif;
+        padding: 10px 0px;
+        border-bottom: 2px solid #131313;
       }
 
       .price__section {
@@ -93,7 +101,16 @@
       }
 
       .price__section p {
+        text-align: center;
         letter-spacing: 1px;
+        padding: 10px;
+      }
+
+      .price__section span {
+        padding: 5px;
+        border: 1px solid #131313;
+        margin-bottom: 5px;
+        display: block;
       }
 
       .buy__now__button {
@@ -119,13 +136,8 @@
         text-decoration: none;
         padding: 15px 35px;
         color: #131313;
-        background-color: #efefef;
         width: 100%;
         margin-bottom: 30px;
-        border: 1px solid transparent;
-      }
-
-      .about__us__button:hover {
         border: 1px solid #131313;
       }
     </style>
@@ -152,13 +164,14 @@
           </svg>
 
           <h3 class="product__name">Açaí Eis</h3>
+
           <p class="product__description">
             Die besondere Açaí Palmbeere aus Südamerika überzeugt mit ihrem
             exotischen Geschmack.
           </p>
           <div class="price__section">
-            <p href="#"><strong>9,90€</strong></p>
-            <p href="#"><strong>7,90€</strong></p>
+            <p href="#"><span>165 ml</span><strong>7,90€</strong></p>
+            <p href="#"><span>550 ml</span><strong>9,90€</strong></p>
           </div>
 
           <a
@@ -172,6 +185,12 @@
             href="https://www.gelateria-giulia.de/ueber-uns/"
             >ÜBER UNS</a
           >
+
+          <img
+            class="img-responsive"
+            src="https://www.gelateria-giulia.de/wp-content/uploads/2022/03/Vorderseite-Acai-Gross-heller.jpeg"
+            alt=""
+          />
         </div>
       </div>
     </div>
