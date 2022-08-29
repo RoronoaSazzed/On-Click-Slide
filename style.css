@@ -1,0 +1,126 @@
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.img-responsive {
+  max-width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+#button__one,
+#button__two {
+  border: none;
+  background-color: #131313;
+  color: white;
+  padding: 15px 35px;
+  font-family: "Bellefair", serif;
+  font-size: 18px;
+  display: block;
+  text-transform: uppercase;
+}
+
+#button__one:hover,
+#button__two:hover {
+  cursor: pointer;
+}
+
+.slide__section {
+  min-height: 100vh;
+  padding: 50px 30px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.11);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translate(100%, 0);
+  z-index: 100;
+  transition: all 0.5s;
+  background-color: white;
+}
+
+.wrapper__product {
+  position: relative;
+}
+
+.show {
+  transition: all 0.5s;
+  transform: translate(0%, 0);
+}
+
+.close__btn {
+  position: absolute;
+  top: 0%;
+  right: 5%;
+  width: 25px;
+  z-index: 500;
+}
+
+.close__btn:hover {
+  cursor: pointer;
+}
+
+.product__name {
+  font-size: 40px;
+  font-family: "Bellefair", serif;
+  padding: 10px 0px;
+  border-bottom: 2px solid #131313;
+}
+
+.price__section {
+  padding: 10px 0;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.price__section p {
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.price__section span {
+  padding: 5px;
+  border: 1px solid #131313;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.buy__now__button {
+  text-align: center;
+  font-family: "Bellefair", serif;
+  display: block;
+  text-decoration: none;
+  padding: 15px 35px;
+  color: white;
+  background-color: #131313;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.buy__now__button:hover {
+  background-color: rgba(19, 19, 19, 0.95);
+}
+
+.about__us__button {
+  text-align: center;
+  font-family: "Bellefair", serif;
+  display: block;
+  text-decoration: none;
+  padding: 15px 35px;
+  color: #131313;
+  width: 100%;
+  margin-bottom: 30px;
+  border: 1px solid #131313;
+}

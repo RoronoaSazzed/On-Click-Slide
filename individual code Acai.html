@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Single Product File - Acai Eis</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parentDiv">
+      <div class="wrapper">
+        <button id="button__one" onclick="show('slide__section_1')">
+          Açaí Eis
+        </button>
+      </div>
+    </div>
+
+    <div class="slide__section" id="slide__section_1">
+      <div class="wrapper__product">
+        <svg
+          class="close__btn"
+          width="100%"
+          min-height="0"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          onclick="hide('slide__section_1')"
+        >
+          <path
+            d="M2.5 37.25L37.5 2.25M2.5 2.25L37.5 37.25"
+            stroke="#131313"
+            stroke-width="4"
+            stroke-linecap="round"
+          />
+        </svg>
+
+        <h3 class="product__name">Açaí Eis</h3>
+
+        <p class="product__description">
+          Die besondere Açaí Palmbeere aus Südamerika überzeugt mit ihrem
+          exotischen Geschmack.
+        </p>
+        <div class="price__section">
+          <p href="#"><strong>7,90€</strong><span>165 ml</span></p>
+          <p href="#"><strong>9,90€</strong><span>550 ml</span></p>
+        </div>
+
+        <a
+          class="buy__now__button"
+          href="https://www.gelateria-giulia.de/product/acai-eis/"
+          >JETZT BESTELLEN</a
+        >
+
+        <a
+          class="about__us__button"
+          href="https://www.gelateria-giulia.de/ueber-uns/"
+          >ÜBER UNS</a
+        >
+
+        <img
+          class="img-responsive"
+          src="https://www.gelateria-giulia.de/wp-content/uploads/2022/03/Vorderseite-Acai-Gross-heller.jpeg"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <script>
+      function show(id) {
+        const classes = document.getElementById(id).classList;
+        if (!classes.contains("show")) {
+          document.getElementById(id).classList.add("show");
+        }
+      }
+
+      function hide(id) {
+        const classes = document.getElementById(id).classList;
+        if (classes.contains("show")) {
+          document.getElementById(id).classList.remove("show");
+        }
+      }
+    </script>
+  </body>
+</html>
